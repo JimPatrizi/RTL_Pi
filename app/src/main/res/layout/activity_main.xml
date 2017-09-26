@@ -6,143 +6,136 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.rtl_pi.jamespatrizi.rtl_pi.MainActivity"
-    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteY="25dp"
     tools:layout_editor_absoluteX="0dp">
 
     <EditText
         android:id="@+id/editText"
         style="@style/Widget.AppCompat.EditText"
-        android:layout_width="167dp"
+        android:layout_width="0dp"
         android:layout_height="42dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="34dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Hz"
         android:inputType="number"
         android:selectAllOnFocus="true"
         android:visibility="visible"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="9dp"
+        app:layout_constraintRight_toRightOf="@+id/p10khz"
+        android:layout_marginTop="108dp"
+        tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.548"
-        app:layout_constraintBottom_toTopOf="@+id/button6" />
+        app:layout_constraintHorizontal_bias="0.47"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/p1khz" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/execute"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="16dp"
         android:text="EXECUTE"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="63dp"
         android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/button12" />
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/editText"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="125dp"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/p1khz"
         style="@style/Widget.AppCompat.Button"
-        android:layout_width="wrap_content"
+        android:layout_width="88dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="6dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
         android:text="+1kHz"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        app:layout_constraintBottom_toTopOf="@+id/button8"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintBottom_toTopOf="@+id/n1khz"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/button7" />
+        app:layout_constraintRight_toLeftOf="@+id/p10khz" />
 
     <Button
-        android:id="@+id/button7"
-        android:layout_width="wrap_content"
+        android:id="@+id/p10khz"
+        android:layout_width="88dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="6dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="13dp"
         android:text="+10kHz"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        app:layout_constraintBottom_toTopOf="@+id/button9"
-        app:layout_constraintRight_toLeftOf="@+id/button10" />
+        app:layout_constraintLeft_toRightOf="@+id/p1khz"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/p100khz"
+        app:layout_constraintRight_toLeftOf="@+id/p100khz" />
 
     <Button
-        android:id="@+id/button8"
-        android:layout_width="wrap_content"
+        android:id="@+id/n1khz"
+        android:layout_width="88dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="314dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
         android:elevation="0dp"
         android:text="-1kHz"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.888"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/button9" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/n10hz"
+        tools:layout_constraintBaseline_creator="1"
+        app:layout_constraintRight_toLeftOf="@+id/n10hz" />
 
     <Button
-        android:id="@+id/button9"
-        android:layout_width="wrap_content"
+        android:id="@+id/n10hz"
+        android:layout_width="88dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="314dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="9dp"
         android:text="-10kHz"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/button11" />
+        app:layout_constraintLeft_toRightOf="@+id/n1khz"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/p10khz"
+        app:layout_constraintRight_toLeftOf="@+id/n100khz" />
 
     <Button
-        android:id="@+id/button10"
-        android:layout_width="wrap_content"
+        android:id="@+id/p100khz"
+        android:layout_width="88dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="6dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="0dp"
         android:text="+100kHz"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        app:layout_constraintBottom_toTopOf="@+id/button11"
-        app:layout_constraintRight_toLeftOf="@+id/button12" />
+        app:layout_constraintLeft_toRightOf="@+id/p10khz"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="46dp"
+        app:layout_constraintTop_toBottomOf="@+id/execute"
+        app:layout_constraintRight_toLeftOf="@+id/p10mhz" />
 
     <Button
-        android:id="@+id/button11"
-        android:layout_width="wrap_content"
+        android:id="@+id/n100khz"
+        android:layout_width="88dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="314dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:text="-100kHz"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/button13" />
+        app:layout_constraintLeft_toRightOf="@+id/n10hz"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/p100khz"
+        app:layout_constraintRight_toLeftOf="@+id/n10mhz" />
 
     <Button
-        android:id="@+id/button12"
-        android:layout_width="wrap_content"
+        android:id="@+id/p10mhz"
+        android:layout_width="88dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="6dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="11dp"
         android:text="+10MHz"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        app:layout_constraintBottom_toTopOf="@+id/button13"
+        app:layout_constraintLeft_toRightOf="@+id/p100khz"
+        app:layout_constraintBottom_toTopOf="@+id/n10mhz"
         app:layout_constraintRight_toRightOf="parent" />
 
     <Button
-        android:id="@+id/button13"
-        android:layout_width="wrap_content"
+        android:id="@+id/n10mhz"
+        android:layout_width="88dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="314dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="16dp"
         android:text="-10MHz"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/n100khz"
+        app:layout_constraintBaseline_toBaselineOf="@+id/n100khz"
+        tools:layout_constraintBaseline_creator="1"
         app:layout_constraintRight_toRightOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
