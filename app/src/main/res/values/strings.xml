@@ -2,4 +2,6 @@
     <string name="app_name">RTL_Pi</string>
     <string name="Hz" />
     <string name="Execute" />
+    <string name="one">One</string>
+    <string name="descr_overflow_button">overflow</string>
 </resources>

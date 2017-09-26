@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/RTL_Pi.iml" filepath="$PROJECT_DIR$/RTL_Pi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RTL_Piv1.iml" filepath="$PROJECT_DIR$/RTL_Piv1.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
