@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //set view of activity_main.xml
         setContentView(R.layout.activity_main);
 
         //Create Modulation Mode Spinner
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         execute_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                EditText text = (EditText)findViewById(R.id.editText);
+                EditText text = (EditText)findViewById(R.id.Hz_Input);
                 Toast toast = new Toast(getApplicationContext());
                 toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
                 toast = toastFromEditText(text);
