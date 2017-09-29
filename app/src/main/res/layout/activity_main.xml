@@ -14,9 +14,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Squelch: "
-        android:layout_marginLeft="8dp"
+        android:layout_marginLeft="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginBottom="0dp"
+        android:layout_marginBottom="1dp"
         app:layout_constraintBottom_toTopOf="@+id/squelch_seek" />
 
     <SeekBar
@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="108dp"
+        android:layout_marginBottom="164dp"
         android:max="20"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -47,14 +47,14 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="9dp"
         app:layout_constraintRight_toRightOf="@+id/p10khz"
-        android:layout_marginTop="108dp"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
-        android:layout_marginBottom="8dp"
+        app:layout_constraintHorizontal_bias="0.941"
+        android:layout_marginBottom="44dp"
         app:layout_constraintBottom_toTopOf="@+id/p1khz"
-        app:layout_constraintVertical_bias="0.176" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintVertical_bias="0.91" />
 
     <Button
         android:id="@+id/execute"
@@ -69,7 +69,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         tools:layout_constraintTop_creator="1"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="117dp"
+        android:layout_marginTop="69dp"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -82,7 +82,7 @@
         app:layout_constraintBottom_toTopOf="@+id/n1khz"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/p10khz"
-        android:layout_marginBottom="1dp" />
+        android:layout_marginBottom="-12dp" />
 
     <Button
         android:id="@+id/p10khz"
@@ -92,9 +92,9 @@
         android:textAppearance="@style/TextAppearance.AppCompat"
         app:layout_constraintLeft_toRightOf="@+id/p1khz"
         tools:layout_constraintTop_creator="1"
-        app:layout_constraintTop_toTopOf="@+id/p100khz"
         app:layout_constraintRight_toLeftOf="@+id/p100khz"
-        android:layout_marginTop="-1dp" />
+        app:layout_constraintTop_toTopOf="@+id/p100khz"
+        android:layout_marginTop="0dp" />
 
     <Button
         android:id="@+id/n1khz"
@@ -118,7 +118,7 @@
         tools:layout_constraintTop_creator="1"
         app:layout_constraintTop_toBottomOf="@+id/p10khz"
         app:layout_constraintRight_toLeftOf="@+id/n100khz"
-        android:layout_marginTop="-1dp" />
+        android:layout_marginTop="0dp" />
 
     <Button
         android:id="@+id/p100khz"
@@ -128,9 +128,9 @@
         android:textAppearance="@style/TextAppearance.AppCompat"
         app:layout_constraintLeft_toRightOf="@+id/p10khz"
         tools:layout_constraintTop_creator="1"
-        android:layout_marginTop="47dp"
-        app:layout_constraintTop_toBottomOf="@+id/execute"
-        app:layout_constraintRight_toLeftOf="@+id/p10mhz" />
+        app:layout_constraintRight_toLeftOf="@+id/p10mhz"
+        android:layout_marginTop="44dp"
+        app:layout_constraintTop_toBottomOf="@+id/execute" />
 
     <Button
         android:id="@+id/n100khz"
@@ -142,7 +142,7 @@
         tools:layout_constraintTop_creator="1"
         app:layout_constraintTop_toBottomOf="@+id/p100khz"
         app:layout_constraintRight_toLeftOf="@+id/n10mhz"
-        android:layout_marginTop="-1dp" />
+        android:layout_marginTop="0dp" />
 
     <Button
         android:id="@+id/p10mhz"
@@ -153,7 +153,7 @@
         app:layout_constraintLeft_toRightOf="@+id/p100khz"
         app:layout_constraintBottom_toTopOf="@+id/n10mhz"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="1dp" />
+        android:layout_marginBottom="-9dp" />
 
     <Button
         android:id="@+id/n10mhz"
@@ -173,7 +173,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="117dp"
+        android:layout_marginTop="69dp"
         android:dropDownWidth="150dp"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toRightOf="@+id/Hz_Input"
@@ -191,7 +191,7 @@
         app:layout_constraintTop_toBottomOf="@+id/squelch_seek"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.365" />
+        app:layout_constraintVertical_bias="0.179" />
 
     <SeekBar
         android:id="@+id/gain_seek"
@@ -206,16 +206,16 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="8dp"
-        app:layout_constraintVertical_bias="0.969" />
+        app:layout_constraintVertical_bias="0.984" />
 
     <TextView
         android:id="@+id/gain_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Gain (db): "
-        android:layout_marginLeft="8dp"
+        android:layout_marginLeft="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginBottom="0dp"
+        android:layout_marginBottom="7dp"
         app:layout_constraintBottom_toTopOf="@+id/gain_seek" />
 
 </android.support.constraint.ConstraintLayout>
